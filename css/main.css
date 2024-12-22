@@ -4,38 +4,18 @@
 
 body {
     margin: 0;
+  
 }
-
-header {
-    background-color: rgb(204, 102, 0);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 1em;
-}
-
-a {
-    text-decoration: none;
-    color: unset;
-}
-
-img {
-    width: 100%;
-}
-
-.nav-bar {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
 .logo {
     font-size: 40px;
     margin: 0;
+}
+.main-header {
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    background-color: rgb(204, 102, 0);
 }
 
 .main-header .nav-bar a {
@@ -46,4 +26,25 @@ img {
     cursor: pointer;
 
     transition: box-shadow 0.4s;
+}
+
+.nav-bar {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+canvas {
+    border: 2px solid #666;
+    background-color: #fff;
+}
+
+.meme-editor{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    max-width: min-content;
+    margin: 0 auto;
+
 }

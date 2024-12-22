@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="main-header">
-            <h2 class="logo"><a href="#">MemeGen</a></h2>
+            <h2>MemeGen</h2>
             <nav class="main-nav">
                 <ul class="nav-bar">
                     <li><a href="#">Gallery</a></li>
@@ -20,18 +20,26 @@
             </nav>
         </div>
     </header>
-    <main class="main-content">
-        <section class="meme-gallery">
-            <img src="./meme-imgs/1.jpg" alt="">
-            <img src="./meme-imgs/2.jpg" alt="">
-        </section>
-        <section class="meme-editor">
-            <div class="meme-canvas"></div>
-            <div class="meme-editor-tools"></div>
-        </section>
-    </main>
 
-    <script src="js/main.js"></script>
+    <section class="image-gallery">
+        <!-- <img src="./meme-imgs/1.jpg" alt="">
+            <img src="./meme-imgs/2.jpg" alt=""> -->
+    </section>
+
+    <section class="meme-editor">
+        <div class="meme-canvas">
+            <canvas width="600" height="500"></canvas>
+        </div>
+
+        <div class="editor-toolbox">
+            <label>
+                <input type="text" placeholder="your text here" />
+            </label>
+        </div>
+
+    </section>
+
+    <script src="js/controllers/memeController.js"></script>
 </body>
 
 </html>
