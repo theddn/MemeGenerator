@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
-<body>
+<body onload="onInit()">
     <header>
         <div class="main-header">
             <h2>MemeGen</h2>
@@ -22,8 +22,8 @@
     </header>
 
     <section class="image-gallery">
-        <!-- <img src="./meme-imgs/1.jpg" alt="">
-            <img src="./meme-imgs/2.jpg" alt=""> -->
+        <img src="./meme-imgs/1.jpg" alt="">
+        <img src="./meme-imgs/2.jpg" alt="">
     </section>
 
     <section class="meme-editor">
@@ -38,6 +38,7 @@
         </div>
 
     </section>
+    <script src="js/services/memeService.js"></script>
 
     <script src="js/controllers/memeController.js"></script>
 </body>
