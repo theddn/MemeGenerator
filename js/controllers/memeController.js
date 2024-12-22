@@ -1,15 +1,22 @@
 'use strict'
 
-var gImgs = [{ id: 1, url: 'meme-imgs/1.jpg' }]
-var gMeme = {
-    selectedImgId: 5,
-    selectedLineIdx: 0,
-    lines: [
-        {
-            txt: 'I sometimes eat Falafel',
-            size: 20,
-            color: 'red',
-        },
-    ],
+var gElCanvas
+var gCtx
+
+
+function onInit() {
+    gElCanvas = document.querySelector('canvas')
+    gCtx = gElCanvas.getContext('2d')
+
+    renderMeme()
 }
 
+
+function renderMeme() {
+    const currMeme = getMeme()
+    const { selectedImgId } = currMeme
+    const elImg = new Image()
+
+    elImg.src = `meme-imgs/${selectedImgId}.jpg`
+    gCtx.drawImage( elImg, 0, 0, gElCanvas.width, gElCanvas.height)
+}
