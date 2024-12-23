@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-  
 }
 .logo {
     font-size: 40px;
@@ -39,12 +38,26 @@ canvas {
     background-color: #fff;
 }
 
-.meme-editor{
+.meme-editor {
     display: flex;
     flex-direction: row;
     gap: 50px;
     align-items: center;
     max-width: min-content;
     margin: 0 auto;
-
 }
+
+.gallery {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    place-items: center;
+    place-content: baseline;
+    grid-auto-flow: dense;
+    padding: 2em;
+   
+    margin-inline: auto;
+}
+.gallery > img {
+    width: 25%;
+   
+}
+
