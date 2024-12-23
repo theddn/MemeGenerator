@@ -30,25 +30,31 @@ function renderGallery() {
     })
     document.querySelector('.gallery').innerHTML = strHtml.join('')
 }
+
 function onImgSelect(ImgId) {
     setImgMeme(ImgId)
     renderMeme()
 }
+
 function drawText() {
     const linesText = getLineTxt()
     linesText.forEach((lineText, idx) => {
         const { txt, size, color, pos } = lineText
         const { x, y } = pos
 
-        gCtx.font = '40px Ariel'
+        gCtx.font = '40px serif'
+        gCtx.baseLine = 'middle'
 
         gCtx.strokeStyle = 'black'
         gCtx.fillStyle = 'red'
-        gCtx.lineWidth = '10'
-
-        gCtx.textAlign = 'center'
+        gCtx.lineWidth = '8'
 
         gCtx.strokeText(txt, x, y)
         gCtx.fillText(txt, x, y)
     })
+}
+
+function onTxtInput(text) {
+    setTxtInput(text)
+    renderMeme()
 }

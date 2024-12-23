@@ -27,9 +27,9 @@ var gMeme = {
         {
             txt: 'I sometimes eat Falafel',
             size: 40,
-            font: 'Ariel',
+            font: 'Serif',
             color: 'red',
-            pos: { x: 100, y: 50 },
+            pos: { x: 30, y: 70 },
         },
     ],
 }
@@ -43,6 +43,11 @@ function getImgs() {
 }
 function getLineTxt() {
     return gMeme.lines
+}
+
+function setTxtInput(text) {
+    const lineTxt = gMeme.lines[gMeme.selectedLineIdx]
+    lineTxt.txt = text
 }
 
 function setImgMeme(ImgId) {

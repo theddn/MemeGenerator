@@ -26,12 +26,12 @@
 
     <section class="meme-editor">
         <div class="meme-canvas">
-            <canvas width="500" height="500"></canvas>
+            <canvas width="450" height="450"></canvas>
         </div>
 
         <div class="editor-toolbox">
             <label>
-                <input type="text" name="text" placeholder="your text here" />
+                <input type="text" name="text" placeholder="your text here" oninput="onTxtInput(this.value)" />
             </label>
         </div>
 
