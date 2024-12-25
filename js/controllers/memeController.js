@@ -42,7 +42,8 @@ function drawText() {
         const { txt, size, color, pos } = lineText
         const { x, y } = pos
 
-        gCtx.font = '40px serif'
+        // gCtx.font = '40px serif'
+        gCtx.font = `${size}px serif`
         gCtx.baseLine = 'middle'
 
         gCtx.strokeStyle = 'black'
@@ -68,3 +69,13 @@ function onColorPicker(color) {
     setColorPicked(color)
     renderMeme()
 }
+// TODO: 
+ function onIncreaseFont(){
+    setIncreaseFont()
+    renderMeme()
+ }
+
+ function onDecreaseFont(){
+    setDecreaseFont()
+    renderMeme()
+ }

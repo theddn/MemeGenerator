@@ -59,3 +59,13 @@ function setColorPicked(color) {
     const colorPicked = gMeme.lines[gMeme.selectedLineIdx]
     colorPicked.color = color
 }
+
+function setIncreaseFont() {
+    const increaseFont = gMeme.lines[gMeme.selectedLineIdx]
+    increaseFont.size += 5
+}
+
+function setDecreaseFont( ){
+    const decreaseFont = gMeme.lines[gMeme.selectedLineIdx]
+    decreaseFont.size -= 5
+}
