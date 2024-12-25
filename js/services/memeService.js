@@ -41,6 +41,11 @@ function getMeme() {
 function getImgs() {
     return gImgs
 }
+
+function setImgMeme(ImgId) {
+    gMeme.selectedImgId = ImgId
+}
+
 function getLineTxt() {
     return gMeme.lines
 }
@@ -50,6 +55,7 @@ function setTxtInput(text) {
     lineTxt.txt = text
 }
 
-function setImgMeme(ImgId) {
-    gMeme.selectedImgId = ImgId
+function setColorPicked(color) {
+    const colorPicked = gMeme.lines[gMeme.selectedLineIdx]
+    colorPicked.color = color
 }

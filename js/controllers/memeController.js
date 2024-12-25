@@ -46,8 +46,8 @@ function drawText() {
         gCtx.baseLine = 'middle'
 
         gCtx.strokeStyle = 'black'
-        gCtx.fillStyle = 'red'
-        gCtx.lineWidth = '8'
+        gCtx.fillStyle = color
+        gCtx.lineWidth = '2'
 
         gCtx.strokeText(txt, x, y)
         gCtx.fillText(txt, x, y)
@@ -62,4 +62,9 @@ function onTxtInput(text) {
 function downloadImg(elLink) {
     var imgContent = gElCanvas.toDataURL('image/jpeg')
     elLink.href = imgContent
-  }
+}
+
+function onColorPicker(color) {
+    setColorPicked(color)
+    renderMeme()
+}
