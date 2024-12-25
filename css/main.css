@@ -33,7 +33,7 @@ body {
     list-style-type: none;
 }
 
-canvas {
+.meme-canvas {
     border: 2px solid #666;
     background-color: #fff;
 }
@@ -48,16 +48,15 @@ canvas {
 }
 
 .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     place-items: center;
     place-content: baseline;
     grid-auto-flow: dense;
     padding: 2em;
-   
+
     margin-inline: auto;
 }
-.gallery > img {
-    width: 25%;
-   
+.gallery > .gallery-item {
+    width: 20%;
+    padding: 0.25em;
 }
-

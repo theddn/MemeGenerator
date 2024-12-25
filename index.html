@@ -11,31 +11,36 @@
 <body onload="onInit()">
     <header>
         <div class="main-header">
-            <h2>MemeGen</h2>
+            <h2> MemeGenerator </h2>
             <nav class="main-nav">
                 <ul class="nav-bar">
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#"> Gallery </a></li>
+                    <li><a href="#"> About </a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="gallery">
+    <section class="gallery-container">
     </section>
 
     <section class="meme-editor">
-        <div class="meme-canvas">
+
+        <div class="canvas-container">
             <canvas width="450" height="450"></canvas>
         </div>
 
-        <div class="editor-toolbox">
-            <label>
-                <input type="text" name="text" placeholder="your text here" oninput="onTxtInput(this.value)" />
-            </label>
+        <div class="toolbox">
+            <input type="text" name="text" placeholder="your text here" oninput="onTxtInput(this.value)" />
+
+            <section>
+                <a href="#" class="btn" onclick="downloadImg(this)" download=""> Download </a>
+            </section>
+
         </div>
 
     </section>
+
     <script src="js/services/memeService.js"></script>
 
     <script src="js/controllers/memeController.js"></script>

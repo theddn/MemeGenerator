@@ -28,7 +28,7 @@ function renderGallery() {
     let strHtml = imgs.map((img) => {
         return `<img  class="gallery-item" src="${img.url}" onclick="onImgSelect(${img.id})">`
     })
-    document.querySelector('.gallery').innerHTML = strHtml.join('')
+    document.querySelector('.gallery-container').innerHTML = strHtml.join('')
 }
 
 function onImgSelect(ImgId) {
@@ -58,3 +58,8 @@ function onTxtInput(text) {
     setTxtInput(text)
     renderMeme()
 }
+
+function downloadImg(elLink) {
+    var imgContent = gElCanvas.toDataURL('image/jpeg')
+    elLink.href = imgContent
+  }
