@@ -72,7 +72,6 @@ function setDecreaseFont() {
 
 function addMultiLines() {
     gMeme.lines.push({
-        
         txt: 'I sometimes eat Falafel',
         size: 40,
         font: 'Serif',
@@ -80,6 +79,10 @@ function addMultiLines() {
         pos: { x: 30, y: 140 },
     })
     gMeme.selectedLineIdx++
-    console.log(gMeme)
-    
+}
+
+function toggleLine() {
+    gMeme.lines.length - 1 === gMeme.selectedLineIdx
+        ? (gMeme.selectedLineIdx = 0)
+        : gMeme.selectedLineIdx++
 }

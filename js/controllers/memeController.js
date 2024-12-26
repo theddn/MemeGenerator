@@ -52,7 +52,7 @@ function drawText() {
         gCtx.strokeText(txt, x, y)
         gCtx.fillText(txt, x, y)
 
-        
+
     })
 }
 
@@ -81,9 +81,12 @@ function onDecreaseFont() {
     renderMeme()
 }
 
-// TODO: Phase4 - multiple lines
-// Add (to gMeme) a second line
 function onAddMultiLines() {
     addMultiLines()
+    renderMeme()
+}
+
+function onToggleLines() {
+    toggleLine()
     renderMeme()
 }
