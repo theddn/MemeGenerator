@@ -38,11 +38,10 @@ function onImgSelect(ImgId) {
 
 function drawText() {
     const linesText = getLineTxt()
-    linesText.forEach((lineText, idx) => {
+    linesText.forEach((lineText,idx) => {
         const { txt, size, color, pos } = lineText
         const { x, y } = pos
 
-        // gCtx.font = '40px serif'
         gCtx.font = `${size}px serif`
         gCtx.baseLine = 'middle'
 
@@ -52,6 +51,8 @@ function drawText() {
 
         gCtx.strokeText(txt, x, y)
         gCtx.fillText(txt, x, y)
+
+        
     })
 }
 
@@ -69,13 +70,20 @@ function onColorPicker(color) {
     setColorPicked(color)
     renderMeme()
 }
-// TODO: 
- function onIncreaseFont(){
+
+function onIncreaseFont() {
     setIncreaseFont()
     renderMeme()
- }
+}
 
- function onDecreaseFont(){
+function onDecreaseFont() {
     setDecreaseFont()
     renderMeme()
- }
+}
+
+// TODO: Phase4 - multiple lines
+// Add (to gMeme) a second line
+function onAddMultiLines() {
+    addMultiLines()
+    renderMeme()
+}
