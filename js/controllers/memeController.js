@@ -3,13 +3,6 @@
 var gElCanvas
 var gCtx
 
-function onInit() {
-    gElCanvas = document.querySelector('canvas')
-    gCtx = gElCanvas.getContext('2d')
-    renderGallery()
-    renderMeme()
-}
-
 function renderMeme() {
     const currMeme = getMeme()
     const { selectedImgId } = currMeme
@@ -90,3 +83,4 @@ function onToggleLines() {
     toggleLine()
     renderMeme()
 }
+
