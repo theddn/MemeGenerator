@@ -1,8 +1,5 @@
 'use strict'
 
-var gElCanvas
-var gCtx
-
 function renderMeme() {
     const currMeme = getMeme()
     const { selectedImgId } = currMeme
@@ -16,36 +13,23 @@ function renderMeme() {
     }
 }
 
-function renderGallery() {
-    const imgs = getImgs()
-    let strHtml = imgs.map((img) => {
-        return `<img  class="gallery-item" src="${img.url}" onclick="onImgSelect(${img.id})">`
-    })
-    document.querySelector('.gallery-container').innerHTML = strHtml.join('')
-}
-
-function onImgSelect(ImgId) {
-    setImgMeme(ImgId)
-    renderMeme()
-}
-
 function drawText() {
     const linesText = getLineTxt()
-    linesText.forEach((lineText,idx) => {
+    linesText.forEach((lineText, idx) => {
         const { txt, size, color, pos } = lineText
         const { x, y } = pos
 
-        gCtx.font = `${size}px serif`
-        gCtx.baseLine = 'middle'
-
+        gCtx.font = `${size}px Arial`
         gCtx.strokeStyle = 'black'
         gCtx.fillStyle = color
-        gCtx.lineWidth = '2'
+        gCtx.lineWidth = '4'
 
         gCtx.strokeText(txt, x, y)
         gCtx.fillText(txt, x, y)
 
-
+        const textWidth = gCtx.measureText(txt).width
+        
+        gCtx.strokeRect(x, y - size, textWidth, size)
     })
 }
 
@@ -65,12 +49,12 @@ function onColorPicker(color) {
 }
 
 function onIncreaseFont() {
-    setIncreaseFont()
+    increaseFont()
     renderMeme()
 }
 
 function onDecreaseFont() {
-    setDecreaseFont()
+    decreaseFont()
     renderMeme()
 }
 
@@ -80,7 +64,8 @@ function onAddMultiLines() {
 }
 
 function onToggleLines() {
-    toggleLine()
+    toggleLines()
     renderMeme()
 }
+
 

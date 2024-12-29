@@ -7,9 +7,9 @@ let gMeme = {
         {
             txt: 'I sometimes eat Falafel',
             size: 40,
-            font: 'Serif',
+            font: 'Arial',
             color: 'red',
-            pos: { x: 30, y: 70 },
+            pos: { x: 20, y: 60 },
         },
     ],
 }
@@ -32,12 +32,12 @@ function setColorPicked(color) {
     colorPicked.color = color
 }
 
-function setIncreaseFont() {
+function increaseFont() {
     const increaseFont = gMeme.lines[gMeme.selectedLineIdx]
     increaseFont.size += 5
 }
 
-function setDecreaseFont() {
+function decreaseFont() {
     const decreaseFont = gMeme.lines[gMeme.selectedLineIdx]
     decreaseFont.size -= 5
 }
@@ -46,14 +46,14 @@ function addMultiLines() {
     gMeme.lines.push({
         txt: 'I sometimes eat Falafel',
         size: 40,
-        font: 'Serif',
+        font: 'Arial',
         color: 'red',
-        pos: { x: 30, y: 140 },
+        pos: { x: 20, y: 410 },
     })
     gMeme.selectedLineIdx++
 }
 
-function toggleLine() {
+function toggleLines() {
     gMeme.lines.length - 1 === gMeme.selectedLineIdx
         ? (gMeme.selectedLineIdx = 0)
         : gMeme.selectedLineIdx++

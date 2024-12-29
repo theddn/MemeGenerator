@@ -1,11 +1,12 @@
 'use strict'
 
+let gElCanvas
+let gCtx
+
 function onInit() {
     gElCanvas = document.querySelector('canvas')
     gCtx = gElCanvas.getContext('2d')
     renderGallery()
-    renderMeme()
-    // document.querySelector('.meme-editor').classList.add('hidden')
 }
 
 function renderGallery() {
@@ -17,6 +18,8 @@ function renderGallery() {
 }
 
 function onImgSelect(ImgId) {
+    // document.querySelector('.gallery-container').classList.add('hidden')
+    document.querySelector('.meme-editor').classList.remove('hidden')
     setImgMeme(ImgId)
     renderMeme()
 }
