@@ -30,7 +30,7 @@ function drawText() {
 
         const textWidth = gCtx.measureText(txt).width
 
-        gCtx.strokeRect(x, y - size, textWidth, size)
+        gCtx.strokeRect(x - 10, y - size, textWidth + 20, size + 10)
     })
 }
 

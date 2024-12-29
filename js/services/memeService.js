@@ -5,7 +5,7 @@ let gMeme = {
     selectedLineIdx: 0,
     lines: [
         {
-            txt:'Write yor text',
+            txt: 'Write yor text',
             size: 40,
             font: 'Arial',
             color: 'red',
@@ -22,9 +22,8 @@ function getLineTxt() {
     return gMeme.lines
 }
 
-function getLineIdx(){
-    return  gMeme.selectedLineIdx
-
+function getLineIdx() {
+    return gMeme.selectedLineIdx
 }
 
 function setTxtInput(text) {
@@ -55,7 +54,7 @@ function addMultiLines() {
         color: 'red',
         pos: { x: 30, y: 120 },
     })
-    gMeme.selectedLineIdx++
+    gMeme.selectedLineIdx = gMeme.lines.length - 1
 }
 
 function toggleLines() {
