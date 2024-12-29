@@ -20,15 +20,16 @@ function drawText() {
         const { x, y } = pos
 
         gCtx.font = `${size}px Arial`
+        gCtx.textAlign = 'left'
         gCtx.strokeStyle = 'black'
         gCtx.fillStyle = color
-        gCtx.lineWidth = '4'
+        gCtx.lineWidth = 4
 
         gCtx.strokeText(txt, x, y)
         gCtx.fillText(txt, x, y)
 
         const textWidth = gCtx.measureText(txt).width
-        
+
         gCtx.strokeRect(x, y - size, textWidth, size)
     })
 }
@@ -67,5 +68,3 @@ function onToggleLines() {
     toggleLines()
     renderMeme()
 }
-
-

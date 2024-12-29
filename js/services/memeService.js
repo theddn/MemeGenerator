@@ -5,7 +5,7 @@ let gMeme = {
     selectedLineIdx: 0,
     lines: [
         {
-            txt: 'I sometimes eat Falafel',
+            txt:'Write yor text',
             size: 40,
             font: 'Arial',
             color: 'red',
@@ -22,6 +22,11 @@ function getLineTxt() {
     return gMeme.lines
 }
 
+function getLineIdx(){
+    return  gMeme.selectedLineIdx
+
+}
+
 function setTxtInput(text) {
     const lineTxt = gMeme.lines[gMeme.selectedLineIdx]
     lineTxt.txt = text
@@ -34,21 +39,21 @@ function setColorPicked(color) {
 
 function increaseFont() {
     const increaseFont = gMeme.lines[gMeme.selectedLineIdx]
-    increaseFont.size += 5
+    increaseFont.size += 2
 }
 
 function decreaseFont() {
     const decreaseFont = gMeme.lines[gMeme.selectedLineIdx]
-    decreaseFont.size -= 5
+    decreaseFont.size -= 2
 }
 
 function addMultiLines() {
     gMeme.lines.push({
-        txt: 'I sometimes eat Falafel',
+        txt:'Write yor text',
         size: 40,
         font: 'Arial',
         color: 'red',
-        pos: { x: 20, y: 410 },
+        pos: { x: 30, y: 120 },
     })
     gMeme.selectedLineIdx++
 }
