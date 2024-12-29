@@ -1,9 +1,9 @@
 :root {
-    --primary-clr-100: rgb(255, 255, 255);
-    --primary-clr-200: rgb(248, 248, 248);
-    --primary-clr-300: rgb(235, 235, 235);
-
-    --primary-clr-400: rgb(152, 152, 152);
-
-    --primary-clr-500: rgb(255, 152, 38);
+    --primary-clr-1: #ffffff;
+    --primary-clr-2: #ebeef3;
+    --primary-clr-3: #19a59f;
+    --primary-clr-5: #5970c1;
+    --primary-clr-4: #3e4b68;
+    --primary-clr-5: #383b42;
+    --primary-clr-5: #22252c;
 }
