@@ -9,6 +9,7 @@
 </head>
 
 <body onload="onInit()">
+
     <header>
         <div class="main-header">
             <h2> MemeGenerator </h2>
@@ -21,37 +22,40 @@
         </div>
     </header>
 
-    <section class="gallery-container">
-    </section>
+    <main class="main-content">
 
-    <section class="meme-editor hidden">
+        <section class="gallery-container">
+        </section>
 
-        <div class="canvas-container">
-            <canvas width="450" height="450"></canvas>
-        </div>
+        <section class="meme-editor hidden">
 
-        <div class="toolbox">
-            <input type="text" name="text" placeholder="Add text here" oninput="onTxtInput(this.value)" />
+            <div class="canvas-container">
+                <canvas width="450" height="450"></canvas>
+            </div>
 
-            <section>
-                <a href="#" class="btn" onclick="downloadImg(this)" download=""> Download </a>
-            </section>
+            <div class="toolbox">
+                <input type="text" name="text" placeholder="Add text here" oninput="onTxtInput(this.value)" />
 
-            <section>
-                <input type="color" name="color" id="color" onchange="onColorPicker(this.value)" />
-            </section>
+                <section>
+                    <a href="#" class="btn" onclick="downloadImg(this)" download=""> Download </a>
+                </section>
 
-            <section>
-                <button onclick="onAddMultiLines()"> + </button>
-                <button onclick="onToggleLines()"> || </button>
-                <button onclick="onIncreaseFont()"> A+ </button>
-                <button onclick="onDecreaseFont()"> A- </button>
-            </section>
+                <section>
+                    <input type="color" name="color" id="color" onchange="onColorPicker(this.value)" />
+                </section>
 
-        </div>
+                <section>
+                    <button onclick="onAddMultiLines()"> + </button>
+                    <button onclick="onToggleLines()"> || </button>
+                    <button onclick="onIncreaseFont()"> A+ </button>
+                    <button onclick="onDecreaseFont()"> A- </button>
+                </section>
 
-    </section>
+            </div>
 
+        </section>
+
+    </main>
     <script src="js/services/galleryService.js"></script>
     <script src="js/services/memeService.js"></script>
 
