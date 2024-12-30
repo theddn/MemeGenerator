@@ -1,0 +1,19 @@
+.meme-editor {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    max-width: min-content;
+    margin: auto;
+    padding: 1em;
+}
+
+.canvas-container {
+    background-color: darkcyan;
+    margin: 0 auto;
+}
+
+canvas {
+    display: block;
+    background-color: #fff;
+}

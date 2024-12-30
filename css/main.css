@@ -11,6 +11,7 @@
 /* Components */
 @import 'components/main-header.css';
 @import 'components/gallery.css';
+@import 'components/editor.css';
 
 
 /* Media Queries */
@@ -18,72 +19,3 @@
 
 
 
-.main-nav {
-    padding: 1em;
-}
-
-.list-bar {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.meme-editor {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
-    max-width: min-content;
-    margin: auto;
-    padding: 1em;
-}
-
-.canvas-container {
-    background-color: darkcyan;
-    margin: 0 auto;
-}
-
-canvas {
-    display: block;
-    background-color: #fff;
-}
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    place-items: center;
-    place-content: baseline;
-    grid-auto-flow: dense;
-}
-
-.gallery-container .gallery-item {
-    width: 100%;
-    padding: 0.5em;
-}
-
-.hidden {
-    display: none;
-}
-
-/*  */
-/* @media (max-width: 740px){
-    .grid-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    }
-}
-
-@media (max-width: 600px){
-    .grid-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-}
-
-@media (max-width: 460px){
-    img:nth-child(6n){
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-}  */
