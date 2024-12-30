@@ -1,0 +1,23 @@
+header {
+    background-color: var(--primary-clr-5);
+
+ 
+}
+
+.logo {
+    font-family: popping;
+    font-size: 2.73rem;
+    margin: 0;
+}
+
+.main-header .logo {
+    color: var(--primary-clr-1);
+}
+
+.main-header .list-bar a {
+    height: 100px;
+    width: 100px;
+    color: var(--primary-clr-1);
+
+    transition: box-shadow 0.4s;
+}

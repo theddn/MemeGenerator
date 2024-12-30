@@ -1,0 +1,8 @@
+
+
+/* @media (max-width: 680px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+} */

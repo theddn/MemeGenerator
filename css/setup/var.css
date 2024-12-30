@@ -1,9 +1,10 @@
 :root {
     --primary-clr-1: #ffffff;
     --primary-clr-2: #ebeef3;
-    --primary-clr-3: #19a59f;
+    --primary0clr-3: #21ac91;
+    --primary-clr-4: #19a59f;
     --primary-clr-5: #5970c1;
-    --primary-clr-4: #3e4b68;
-    --primary-clr-5: #383b42;
-    --primary-clr-5: #22252c;
+    --primary-clr-6: #3e4b68;
+    --primary-clr-7: #383b42;
+    --primary-clr-8: #22252c;
 }
