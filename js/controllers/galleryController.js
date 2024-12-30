@@ -7,7 +7,7 @@ function onInit() {
     gElCanvas = document.querySelector('canvas')
     gCtx = gElCanvas.getContext('2d')
     renderGallery()
-    renderMeme()
+  
 }
 
 function renderGallery() {
@@ -19,7 +19,7 @@ function renderGallery() {
 }
 
 function onImgSelect(ImgId) {
-    // document.querySelector('.gallery-container').classList.add('hidden')
+    document.querySelector('.gallery-container').classList.add('hidden')
     document.querySelector('.meme-editor').classList.remove('hidden')
     setImgMeme(ImgId)
     renderMeme()

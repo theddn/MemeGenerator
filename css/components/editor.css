@@ -4,6 +4,7 @@
     gap: 50px;
     align-items: center;
     max-width: min-content;
+    
     margin: auto;
     padding: 1em;
 }
@@ -15,5 +16,8 @@
 
 canvas {
     display: block;
-    background-color: #fff;
+}
+
+.hidden {
+    display: none;
 }
