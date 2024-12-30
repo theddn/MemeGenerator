@@ -3,11 +3,12 @@
 }
 
 html {
-    color: var(--primary-clr-1);
     font-family: poppins;
+    color: var(--primary-clr-1);
 }
 
-h1,h2 {
+h1,
+h2 {
     margin: 0 0 1em;
 }
 body {
@@ -15,6 +16,7 @@ body {
 }
 
 img {
+    display: block;
     width: 100%;
 }
 

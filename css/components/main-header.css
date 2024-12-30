@@ -1,7 +1,5 @@
 header {
     background-color: var(--primary-clr-5);
-
- 
 }
 
 .logo {
@@ -18,6 +16,6 @@ header {
     height: 100px;
     width: 100px;
     color: var(--primary-clr-1);
-
+    cursor: pointer;
     transition: box-shadow 0.4s;
 }

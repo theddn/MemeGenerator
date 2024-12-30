@@ -10,42 +10,13 @@
 
 /* Components */
 @import 'components/main-header.css';
+@import 'components/gallery.css';
+
 
 /* Media Queries */
 @import 'mq/mq.css';
 
-/* * {
-    box-sizing: border-box;
-}
 
-body {
-    margin: 0;
-}
-
- */
-
-
-/* 
-.main-header {
-    position: relative;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: rgb(204, 102, 0);
-}
-
-.logo {
-    font-size: 40px;
-    margin: auto;
-}
-
-.main-header .list-bar a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    cursor: pointer;
-    transition: box-shadow 0.4s;
-}
 
 .main-nav {
     padding: 1em;
