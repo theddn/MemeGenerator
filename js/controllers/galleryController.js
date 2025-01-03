@@ -3,11 +3,14 @@
 let gElCanvas
 let gCtx
 
+let gStartPos
+const TOUCH_EVS = ['touchstart', 'touchmove', 'touchend']
+
 function onInit() {
     gElCanvas = document.querySelector('canvas')
     gCtx = gElCanvas.getContext('2d')
     renderGallery()
-  
+    renderMeme()
 }
 
 function renderGallery() {
@@ -24,3 +27,4 @@ function onImgSelect(ImgId) {
     setImgMeme(ImgId)
     renderMeme()
 }
+
