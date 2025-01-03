@@ -69,51 +69,11 @@ function onToggleLines() {
     renderMeme()
 }
 
-function addListeners() {
-    addMouseListeners()
-    addTouchListeners()
+// TODO: When drawing text on the canvas,
+// 1) keep the location
+// 2) size on the line object
+// 3) use it to determine clicks on a line
+
+function onTxtClick(ev){
+
 }
-
-
-function addMouseListeners() {
-    gElCanvas.addEventListener('mousedown', onDown)
-    gElCanvas.addEventListener('mousemove', onMove)
-    gElCanvas.addEventListener('mouseup', onUp)
-  }
-  
-  function addTouchListeners() {
-    gElCanvas.addEventListener('touchstart', onDown)
-    gElCanvas.addEventListener('touchmove', onMove)
-    gElCanvas.addEventListener('touchend', onUp)
-  }
-  
-// function onLineClick(ev) {
-//     ev.preventDefault()
-//     const linesText = getLineTxt()
-
-//     linesText.forEach((lineText,idx)=>{
-
-//     })
-
-// }
-
-// function getEvPos(ev) {
-
-//     let pos = {
-//       x: ev.offsetX,
-//       y: ev.offsetY,
-//     }
-
-//     if (TOUCH_EVS.includes(ev.type)) {
-//       // Prevent triggering the mouse ev
-//       ev.preventDefault()
-//       // Gets the first touch point
-//       ev = ev.changedTouches[0]
-//       // Calc the right pos according to the touch screen
-//       pos = {
-//         x: ev.pageX - ev.target.offsetLeft - ev.target.clientLeft,
-//         y: ev.pageY - ev.target.offsetTop - ev.target.clientTop,
-//       }
-//     }
-//     return pos
-//   }

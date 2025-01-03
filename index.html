@@ -24,38 +24,36 @@
 
     <main class="main-content main-layout">
 
-    <section class="gallery-container">
-    </section>
+        <section class="gallery-container">
+        </section>
 
-    <section class="meme-editor hidden">
+        <section class="meme-editor hidden">
 
-        <div class="canvas-container">
-            <canvas width="450" height="450"></canvas>
-        </div>
+            <div class="canvas-container">
+                <canvas width="450" height="450"></canvas>
+            </div>
 
-        <div class="toolbox">
-            <input type="text" name="text" placeholder="Add text here" oninput="onTxtInput(this.value)" />
+            <div class="toolbox">
+                <input type="text" name="text" placeholder="Add text here" oninput="onTxtInput(this.value)" />
+                <section>
+                    <button onclick="onAddMultiLines()"> + </button>
+                    <button onclick="onToggleLines()"> || </button>
+                    <button onclick="onIncreaseFont()"> A+ </button>
+                    <button onclick="onDecreaseFont()"> A- </button>
+                </section>
 
+                <section>
+                    <input type="color" name="color" id="color" onchange="onColorPicker(this.value)" />
+                </section>
 
-            <section>
-                <button onclick="onAddMultiLines()"> + </button>
-                <button onclick="onToggleLines()"> || </button>
-                <button onclick="onIncreaseFont()"> A+ </button>
-                <button onclick="onDecreaseFont()"> A- </button>
-            </section>
+                <section>
+                    <a href="#" class="btn" onclick="downloadImg(this)" download=""> Download </a>
+                </section>
+            </div>
 
-            <section>
-                <input type="color" name="color" id="color" onchange="onColorPicker(this.value)" />
-            </section>
-
-            <section>
-                <a href="#" class="btn" onclick="downloadImg(this)" download=""> Download </a>
-            </section>
-        </div>
-
-    </section>
-
+        </section>
     </main>
+
     <script src="js/services/galleryService.js"></script>
     <script src="js/services/memeService.js"></script>
 

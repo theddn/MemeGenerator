@@ -48,7 +48,7 @@ function decreaseFont() {
 
 function addMultiLines() {
     gMeme.lines.push({
-        txt:'Write yor text',
+        txt: 'Write yor text',
         size: 40,
         font: 'Arial',
         color: 'red',
@@ -61,4 +61,11 @@ function toggleLines() {
     gMeme.lines.length - 1 === gMeme.selectedLineIdx
         ? (gMeme.selectedLineIdx = 0)
         : gMeme.selectedLineIdx++
+}
+
+// phase 5
+
+function setTxtPos(x, y) {
+    const selectedTxt = gMeme.lines[gMeme.selectedLineIdx]
+    selectedTxt.pos = { x, y }
 }
