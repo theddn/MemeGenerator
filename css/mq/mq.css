@@ -1,8 +1,14 @@
-
-
-/* @media (max-width: 680px){
-    .grid-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+@media screen {
+    @media (max-width: 840px) {
+        .main-layout {
+            max-width: 840px;
+        }
+    
+        .meme-editor {
+            flex-direction: column;
+            padding-inline-end: 1em;
+        }
+   
+        
     }
-} */
+}
