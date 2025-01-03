@@ -80,3 +80,7 @@ function setTxtIdx(idx) {
 function deleteLine(idx) {
     gMeme.lines.splice(idx, 1)
 }
+
+function isClicked(clickedPos, idx) {
+
+  }
