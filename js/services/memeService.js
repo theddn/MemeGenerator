@@ -69,3 +69,8 @@ function setTxtPos(x, y) {
     const selectedTxt = gMeme.lines[gMeme.selectedLineIdx]
     selectedTxt.pos = { x, y }
 }
+
+function setTxtWidth(textWidth, idx) {
+    const selectedTxt = gMeme.lines[idx]
+    selectedTxt.textWidth = textWidth
+}
