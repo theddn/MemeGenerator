@@ -59,13 +59,28 @@ function onDecreaseFont() {
     renderMeme()
 }
 
+function renderTxt() {
+    const idx = getLineIdx()
+    const lines = getLineTxt()
+    const { txt } = lines[idx]
+    document.getElementById('text').value = txt
+}
+
 function onAddMultiLines() {
-    addMultiLines()
+    addMultiLines('Add text here')
+    renderTxt()
     renderMeme()
 }
 
 function onToggleLines() {
     toggleLines()
+    renderTxt()
+    renderMeme()
+}
+function onDeleteLine() {
+    document.getElementById('text').value = 'Add text here'
+    const idx = getLineIdx()
+    deleteLine(idx)
     renderMeme()
 }
 
@@ -74,6 +89,4 @@ function onToggleLines() {
 // 2) size on the line object
 // 3) use it to determine clicks on a line
 
-function onTxtClick(ev){
-
-}
+function onTxtClick(ev) {}
